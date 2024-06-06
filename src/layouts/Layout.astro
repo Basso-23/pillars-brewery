@@ -277,4 +277,58 @@ const { title } = Astro.props;
     margin-right: 14px;
     color: white;
   }
+
+  /*GARAGE ________________________________________________*/
+
+  .g-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    background-position: center;
+    max-height: 850px;
+    aspect-ratio: 1/1;
+  }
+
+  .g-info {
+    margin: auto;
+    padding-left: 1rem /* 16px */;
+    padding-right: 1rem /* 16px */;
+    max-width: 500px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding-top: 5rem /* 80px */;
+    padding-bottom: 5rem /* 80px */;
+    align-items: center;
+  }
+
+  .g-title {
+    font-size: 18px;
+    color: #ec6d26;
+  }
+
+  .g-subtitle {
+    line-height: 50px;
+    font-size: 60px;
+    margin-top: 1rem /* 16px */;
+  }
+
+  .g-button-container {
+    margin-top: 2.5rem /* 40px */;
+    position: relative;
+  }
+
+  .g-button-container:hover {
+    color: #ec6d26;
+  }
+
+  .g-button {
+    position: absolute;
+    font-size: 19px;
+    cursor: pointer;
+    width: 100%;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
 </style>

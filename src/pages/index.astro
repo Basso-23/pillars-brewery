@@ -2,12 +2,14 @@
 import Layout from "../layouts/Layout.astro";
 import Hero from "../components/sections/Hero.astro";
 import Navbar from "../components/sections/Navbar";
+import Garage from "../components/sections/Garage.astro";
 ---
 
 <Layout title="Pillars Brewery">
   <main>
     <Navbar client:load />
     <Hero />
+    <Garage />
     <div class="min-h-screen bg-[#fdeee1]"></div>
   </main>
 </Layout>

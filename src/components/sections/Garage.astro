@@ -1,0 +1,35 @@
+---
+import Slider from "../elements/Slider.astro";
+import CircleOrange from "../icons/CircleOrange.astro";
+---
+
+<section>
+  <div class="grid xl:grid-cols-2 grid-cols-1">
+    <div
+      style="background-image: url(https://i.imgur.com/gPK8Vf5.jpeg);"
+      class="g-image"
+    >
+    </div>
+
+    <div class="g-info">
+      <div class="g-title endless">PILLARS BREWERY</div>
+      <div class="g-subtitle benguiat">
+        THE HOME <br />OF LAGER
+      </div>
+      <div class="mt-4 text-[17px]">
+        Welcome to London&apos;s first craft lager brewery and taproom. Here at
+        Pillars, we brew some of the UK&apos;s best lager. Our beer is created
+        with care, by a team of family and friends, in our Walthamstow brewery.
+        Fancy a taste of our award-winning lager? Visit our venues or order
+        online for home delivery. Pillars is more than just an East London
+        brewery: We&apos;re a community. Come join us!
+      </div>
+
+      <div class="g-button-container">
+        <CircleOrange />
+        <div class="g-button fixedCenterXnY endless">ABOUT PILLARS</div>
+      </div>
+    </div>
+  </div>
+  <Slider background="#000000" />
+</section>

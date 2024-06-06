@@ -1,0 +1,13 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Hero from "../components/sections/Hero.astro";
+import Navbar from "../components/sections/Navbar";
+---
+
+<Layout title="Pillars Brewery">
+  <main>
+    <Navbar client:load />
+    <Hero />
+    <div class="min-h-screen bg-black"></div>
+  </main>
+</Layout>

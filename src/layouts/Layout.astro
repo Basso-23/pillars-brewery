@@ -1,0 +1,196 @@
+---
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
+<style is:global>
+  :root {
+    background-color: #fdeee1;
+    color: #1d1c1a;
+  }
+
+  .fixedCenterY {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .fixedCenterX {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .fixedCenterXnY {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  @font-face {
+    font-family: endless;
+    src: url(/Endless.woff2);
+  }
+
+  .endless {
+    font-family: endless;
+  }
+
+  @font-face {
+    font-family: "benguiat";
+    src: url(/Benguiat.woff2);
+  }
+
+  .benguiat {
+    font-family: benguiat;
+  }
+
+  /*NAVBAR ________________________________________________*/
+
+  .nav-container {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-desktop {
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #fdeee1;
+    display: flex;
+    align-items: center;
+    border-width: 1px;
+    border-color: black;
+    letter-spacing: -0.025em;
+    position: relative;
+    z-index: 50;
+  }
+
+  .nav-buttons {
+    position: absolute;
+    right: 26px;
+    display: flex;
+    gap: 0.75rem /* 12px */;
+    align-items: center;
+  }
+
+  .cart-number {
+    position: absolute;
+    line-height: 1;
+    font-size: 20px;
+    color: #ec6d26;
+    margin-top: -1px;
+    margin-left: -1px;
+  }
+
+  .menu-icon {
+    user-select: none;
+    cursor: pointer;
+  }
+
+  .desktop-tab-container {
+    height: 68px;
+    width: 100%;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    font-size: 21px;
+    gap: 0.5px;
+    border-width: 1px;
+    border-top-width: 0px;
+    border-color: black;
+    letter-spacing: -0.025em;
+  }
+
+  .nav-desktop-tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right-width: 1px;
+    border-color: black;
+    cursor: pointer;
+    user-select: none;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
+
+  .nav-desktop-tab:hover {
+    color: #ec6d26;
+  }
+
+  .menu-container {
+    padding-top: 87px;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: #fdeee1;
+    padding-bottom: 3.5rem /* 56px */;
+  }
+
+  .mobile-tab-container {
+    gap: 1rem /* 16px */;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2.5rem /* 40px */;
+  }
+
+  .nav-mobile-tab {
+    font-size: 32px;
+    cursor: pointer;
+    user-select: none;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
+
+  .nav-mobile-tab:hover {
+    color: #ec6d26;
+  }
+
+  .pattern-bottom-cream {
+    margin-top: 20px;
+    bottom: -0.5px;
+    background-position: bottom left;
+    background-image: url(bottom-cream.svg);
+    margin-bottom: -5px;
+    background-repeat: repeat;
+    height: 26px;
+    position: relative;
+  }
+
+  .links-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem /* 16px */;
+    margin-top: 2.5rem /* 40px */;
+  }
+
+  .social {
+    cursor: pointer;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
+  .social:hover {
+    transform: scale(1.1);
+  }
+
+  /*HERO ________________________________________________*/
+</style>

@@ -1,7 +1,44 @@
 ---
-
+import Slider from "../elements/Slider.astro";
 ---
 
-<section class="min-h-screen">
-  <div></div>
+<section class="lg:pt-[155px] pt-[87px]">
+  <Slider background="#ec6d26" />
+  <div class="h-image-container xl:grid-cols-3 md:grid-cols-2 grid-cols-1">
+    <div
+      style="background-image: url(https://i.imgur.com/vrVZiQM.jpeg);"
+      class="h-image xl:block hidden"
+    >
+      <div class="h-info-container fixedCenterX">
+        <div class="h-title endless">SHOP</div>
+        <div class="h-subtitle benguiat">PILLARS BEERS</div>
+      </div>
+    </div>
+
+    <div
+      style="background-image: url(https://i.imgur.com/LxDpdRb.jpeg);"
+      class="h-image md:block hidden"
+    >
+      <div class="h-info-container fixedCenterX">
+        <div class="h-title endless">VISIT US</div>
+        <div class="h-subtitle benguiat">PILLARS VENUES</div>
+      </div>
+    </div>
+
+    <div
+      style="background-image: url(https://i.imgur.com/y4gjH6z.jpeg);"
+      class="h-image"
+    >
+      <div class="h-info-container fixedCenterX">
+        <div class="h-title endless">NEWS</div>
+        <div class="h-subtitle benguiat">GUIDE TO PILSNER</div>
+      </div>
+    </div>
+
+    <div class="shadowBot">
+      <div class="absolute bottom-0 w-full">
+        <Slider background="#000000" />
+      </div>
+    </div>
+  </div>
 </section>

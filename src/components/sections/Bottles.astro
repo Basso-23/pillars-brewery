@@ -1,0 +1,56 @@
+---
+import CircleBlack from "../icons/CircleBlack.astro";
+import CircleOrange from "../icons/CircleOrange.astro";
+---
+
+<section>
+  <div class="h-image-container xl:grid-cols-3 md:grid-cols-2 grid-cols-1">
+    <div
+      style="background-image: url(https://i.imgur.com/H07xqbn.jpeg);"
+      class="h-image xl:block hidden"
+    >
+      <div class="h-info-container fixedCenterX">
+        <div class="h-title endless">ORDER TODAY</div>
+        <div style="color:#ec6d26" class="h-subtitle benguiat">PILSNER</div>
+      </div>
+    </div>
+
+    <div
+      style="background-image: url(https://i.imgur.com/UljFgg8.jpeg);"
+      class="h-image md:block hidden"
+    >
+      <div class="h-info-container fixedCenterX">
+        <div style="color:#ffffff" class="h-title endless">ORDER TODAY</div>
+        <div style="color:#ffffff" class="h-subtitle benguiat">HOP LAGER</div>
+      </div>
+    </div>
+
+    <div
+      style="background-image: url(https://i.imgur.com/DqqubLp.jpeg);"
+      class="h-image"
+    >
+      <div class="h-info-container fixedCenterX">
+        <div style="color:#fdeee1" class="h-title endless">ORDER TODAY</div>
+        <div class="h-subtitle benguiat">HELLES</div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="sm:flex sm:flex-row flex flex-col justify-center items-center sm:gap-16 gap-0"
+  >
+    <div style="margin-top: 30px;" class="g-button-container w-fit text-center">
+      <CircleBlack />
+      <div
+        class="g-button fixedCenterXnY endless text-white hover:text-[#ec6d26]"
+      >
+        SHOP ALL BEERS
+      </div>
+    </div>
+    <div
+      class="relative sm:mt-[30px] mt-[25px] w-fit text-center hover:text-[#ec6d26]"
+    >
+      <CircleOrange />
+      <div class="g-button fixedCenterXnY endless">SELL OUR BEER</div>
+    </div>
+  </div>
+</section>

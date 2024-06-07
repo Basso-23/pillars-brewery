@@ -68,7 +68,7 @@ const { title } = Astro.props;
   .mark {
     font-family: mark;
   }
-  /*NAVBAR ________________________________________________*/
+  /*Navbar ________________________________________________*/
 
   .nav-container {
     position: fixed;
@@ -202,7 +202,7 @@ const { title } = Astro.props;
     transform: scale(1.1);
   }
 
-  /*HERO ________________________________________________*/
+  /*Hero ________________________________________________*/
 
   .h-image-container {
     padding-top: 42px;
@@ -286,7 +286,7 @@ const { title } = Astro.props;
     color: white;
   }
 
-  /*GARAGE ________________________________________________*/
+  /*Garage ________________________________________________*/
 
   .g-image {
     background-repeat: no-repeat;
@@ -338,5 +338,17 @@ const { title } = Astro.props;
     transition-property: all;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 150ms;
+  }
+
+  /*Carousel ________________________________________________*/
+
+  .square {
+    background-size: cover;
+    border-width: 1px;
+    border-color: black;
+    aspect-ratio: 1 / 1;
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
   }
 </style>

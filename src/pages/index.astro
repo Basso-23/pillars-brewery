@@ -4,6 +4,7 @@ import Hero from "../components/sections/Hero.astro";
 import Navbar from "../components/sections/Navbar";
 import Garage from "../components/sections/Garage.astro";
 import Bottles from "../components/sections/Bottles.astro";
+import Carousel from "../components/sections/Carousel";
 ---
 
 <Layout title="Pillars Brewery">
@@ -12,6 +13,7 @@ import Bottles from "../components/sections/Bottles.astro";
     <Hero />
     <Garage />
     <Bottles />
+    <Carousel client:only="react" />
     <div class="min-h-screen bg-[#fdeee1]"></div>
   </main>
 </Layout>

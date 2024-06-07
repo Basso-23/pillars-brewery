@@ -8,6 +8,7 @@ export default {
 
       md: "718px",
       // => @media (min-width: 768px) { ... }
+      lg2: "940px",
 
       lg: "990px",
       // => @media (min-width: 1024px) { ... }

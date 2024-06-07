@@ -208,6 +208,7 @@ const { title } = Astro.props;
     padding-top: 42px;
     display: grid;
     position: relative;
+    border-bottom: solid 1px black;
   }
 
   .h-image {
@@ -371,5 +372,61 @@ const { title } = Astro.props;
 
   .text-up:hover .h-image {
     filter: brightness(0.35);
+  }
+
+  /*Footer ________________________________________________*/
+
+  .f-title {
+    color: white;
+    padding-left: 5rem /* 80px */;
+    padding-right: 5rem /* 80px */;
+    font-size: 190px;
+    line-height: 1;
+    margin-top: 85px;
+  }
+
+  .link-container {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    color: white;
+  }
+
+  .link-title {
+    font-size: 18px;
+    margin-bottom: 0.5rem /* 8px */;
+    color: #ec6d26;
+  }
+
+  .link {
+    font-size: 16px;
+    font-weight: 600;
+    width: fit-content;
+    cursor: pointer;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
+
+  .link:hover {
+    color: #ec6d26;
+  }
+
+  .copyright {
+    background-color: #1d1c1c;
+    padding-top: 0.5rem /* 8px */;
+    color: white;
+    font-size: 14px;
+    padding-bottom: 1.25rem /* 20px */;
+    width: 100%;
+  }
+
+  .site-footer__secondary-pattern {
+    margin-bottom: -5px;
+    background-image: url(icon-footer-pattern.svg);
+    background-size: contain;
+    background-repeat: repeat;
+    height: 28px;
+    width: 3000px;
   }
 </style>

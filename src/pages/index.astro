@@ -6,6 +6,7 @@ import Garage from "../components/sections/Garage.astro";
 import Bottles from "../components/sections/Bottles.astro";
 import Carousel from "../components/sections/Carousel";
 import Places from "../components/sections/Places.astro";
+import Footer from "../components/sections/Footer.astro";
 ---
 
 <Layout title="Pillars Brewery">
@@ -16,6 +17,6 @@ import Places from "../components/sections/Places.astro";
     <Bottles />
     <Carousel client:only="react" />
     <Places />
-    <div class="min-h-screen bg-[#fdeee1]"></div>
+    <Footer />
   </main>
 </Layout>

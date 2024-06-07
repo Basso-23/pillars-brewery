@@ -216,6 +216,7 @@ const { title } = Astro.props;
     background-size: cover;
     aspect-ratio: 9/13;
     background-position: center;
+    cursor: pointer;
   }
 
   .h-info-container {
@@ -223,6 +224,11 @@ const { title } = Astro.props;
     bottom: 2.5rem /* 40px */;
     text-align: center;
     z-index: 40;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
   }
 
   .h-title {
@@ -243,6 +249,7 @@ const { title } = Astro.props;
     height: 100%;
     width: 100%;
     background: linear-gradient(360deg, rgb(0, 0, 0) 1%, rgba(0, 0, 0, 0) 75%);
+    cursor: pointer;
   }
 
   .marquee {
@@ -350,5 +357,19 @@ const { title } = Astro.props;
     margin-left: auto;
     margin-right: auto;
     background-repeat: no-repeat;
+  }
+
+  /*Places ________________________________________________*/
+
+  .text-up {
+    cursor: pointer;
+  }
+
+  .text-up:hover .h-info-container {
+    bottom: 50%;
+  }
+
+  .text-up:hover .h-image {
+    filter: brightness(0.35);
   }
 </style>

@@ -1,0 +1,42 @@
+---
+import Slider from "../elements/Slider.astro";
+import CircleOrange from "../icons/CircleOrange.astro";
+---
+
+<section class="mt-16">
+  <Slider background="#ec6d26" />
+  <div class="h-image-container md:grid-cols-2 grid-cols-1">
+    <div class="relative text-up">
+      <div
+        style="background-image: url(https://i.imgur.com/0xhpnxR.jpeg); aspect-ratio: 1/1;"
+        class="h-image md:block hidden"
+      >
+      </div>
+      <div class="h-info-container fixedCenterX">
+        <div style="color:#ffffff" class="h-title endless">TRADE</div>
+        <div style="color:#ffffff" class="h-subtitle benguiat">
+          SELL OUR BEER
+        </div>
+      </div>
+    </div>
+    <div class="relative text-up">
+      <div
+        style="background-image: url(https://i.imgur.com/RoGPhKk.jpeg); aspect-ratio: 1/1;"
+        class="h-image"
+      >
+      </div>
+      <div class="h-info-container fixedCenterX">
+        <div style="color:#ec6d26" class="h-title endless">VISIT</div>
+        <div style="color:#ffffff" class="h-subtitle benguiat">
+          THE UNTRADITIONAL PUB
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="relative sm:mt-[30px] my-[25px] w-fit text-center hover:text-[#ec6d26] mx-auto"
+  >
+    <CircleOrange />
+    <div class="g-button fixedCenterXnY endless">VIEW BLOG</div>
+  </div>
+</section>
